@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>#searchInput {
+  padding: 8px;
+  width: 200px;
+  font-size: 16px;
+}
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+}
+</style>
+<body>
+    <div class="searchable-item">Apple</div>
+<div class="searchable-item">Banana</div>
+<div class="searchable-item">Cherry</div>
+
+    <input type="text" id="searchInput" placeholder="Search here...">
+<button onclick="searchFunction()">Search</button>
+
+   
+    
+    <script>function searchFunction() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  const items = document.querySelectorAll('.searchable-item');
+  items.forEach(item => {
+    const text = item.textContent.toLowerCase();
+    item.style.display = text.includes(input) ? '' : 'none';
+  });
+}
+</script>
+</body>
+</html>
