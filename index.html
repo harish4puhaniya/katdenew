@@ -7,6 +7,7 @@
     <title>KATDE</title>
     <link rel="stylesheet" href="STYLE.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="slide.css">
 
 </head>
 
@@ -40,7 +41,30 @@
         <br>
     </div>
    
-        <div class="introimage"><img src="AdobeStock_816981324_Preview 2.jpeg" alt="" class="camli"></div>
+        <div class="introimage"> <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img1.webp" style="width:100%"  class="tutu">
+    <div class="caption">Caption One</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="img2.webp" style="width:100%" class="tutu">
+    <div class="caption">Caption Two</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="img3.webp" style="width:100%" class="tutu">
+    <div class="caption">Caption Three</div>
+  </div>
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- Dots/Indicators -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div></div>
         
         <div class="container">
 
@@ -152,6 +176,7 @@
 
         </footer>
         <script src="script.js"></script>
+        <script src="slide.js"></script>
 
 </body>
 
