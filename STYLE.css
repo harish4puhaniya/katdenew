@@ -58,7 +58,13 @@ footer{
    border-top-left-radius: 9px;
    border-top-right-radius: 9px;
 }
-.endu{
+
+
+
+
+
+@media only screen and (min-width:1140px) {
+    .endu{
    padding: 45px;
    text-align: center;margin-left: 10vw;
    display: flex;
@@ -66,11 +72,6 @@ footer{
    gap: 45px;
 
 }
-
-
-
-
-@media only screen and (min-width:1140px) {
    
     .search{
     display: flex;
@@ -244,6 +245,15 @@ footer{
         
 
 }
+.endu{
+   
+   text-align: center;
+   margin-left: 10vw;
+   
+   
+
+}
+
     #searchInput {
  
   width: 20vw;
@@ -291,6 +301,14 @@ footer{
 }
 @media only screen and (min-width:750px ) and (max-width: 1140px){
    
+.endu{
+   
+   text-align: center;margin-left: 10vw;
+ 
+   
+
+}
+
       .search{
     display: flex;
     align-items: center;
@@ -341,8 +359,6 @@ footer{
     margin-bottom: 1px;
     border-radius: 9px;
     width: 100%;
-    
-    
 }
 
 }
