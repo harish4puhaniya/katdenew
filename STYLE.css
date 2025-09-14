@@ -96,7 +96,7 @@ footer{
         
 
 }
-    #searchInput {
+   #classInput{
  
   width: 200px;
   height: 26px;
@@ -135,7 +135,7 @@ footer{
         height: auto;
         margin-top: 25px;
         border-radius: 9px;
-        filter: blur(1px);
+        
     }
 
 
@@ -263,7 +263,7 @@ footer{
 
 }
 
-    #searchInput {
+    #classInput {
  
   width: 20vw;
   height: 15px;
@@ -287,7 +287,7 @@ footer{
         height: auto;
         margin-top: 5px;
         border-radius: 9px;
-        filter: blur(1.1px);
+        
     }
 
 
@@ -327,7 +327,7 @@ footer{
         
 
 }
-    #searchInput {
+    #classInput {
  
   width: 200px;
   height: 26px;
@@ -354,7 +354,7 @@ footer{
         height: auto;
         margin-top: 5px;
         border-radius: 9px;
-        filter: blur(1.1px);
+        
     }
     .imgcato{display: inline-grid;
      width: 24.9%;

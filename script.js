@@ -1,17 +1,13 @@
-function searchfunction(inputId) {
-    // Get the input element by ID
-    var input = document.getElementById(inputId);
-    // Get the class name from the placeholder
-    var targetClass = input.placeholder.trim();
+function filterDivs() {
+    let inputClass = document.getElementById('classInput').value.trim();
+    let parent = document.getElementById('parentDiv');
+    let childDivs = parent.querySelectorAll('div');
 
-    // Get all divs on the page
-    var divs = document.querySelectorAll('div');
-    divs.forEach(function(div) {
-        // Check if the div contains the target class
-        if (div.classList.contains(targetClass)) {
-            div.style.display = 'block';
-        } else {
-            div.style.display = 'none';
-        }
+    childDivs.forEach(div => {
+      if (inputClass && div.classList.contains(inputClass)) {
+        div.style.display = 'block';  // Show matching div
+      } else {
+        div.style.display = 'none';   // Hide others
+      }
     });
-}
+  }
